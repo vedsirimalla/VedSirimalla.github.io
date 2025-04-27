@@ -742,16 +742,13 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script>
-			  function openModal(id) {
-			    const modal = document.getElementById(id);
-			    modal.style.display = "block";
-			    // No scrollIntoView anymore!
-			  }
-			
-			  function closeModal(id) {
-			    const modal = document.getElementById(id);
-			    modal.style.display = "none";
-			  }
+				function openModal(id) {
+				  document.getElementById(id).style.display = "block";
+				}
+				
+				function closeModal(id) {
+				  document.getElementById(id).style.display = "none";
+				}
 			</script>
 
 
