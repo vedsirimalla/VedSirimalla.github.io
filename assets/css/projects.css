@@ -1,0 +1,94 @@
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 tiles in a line */
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .project-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: 300px; /* Keep image square */
+    object-fit: cover; /* Image fits without weird stretching or cutting */
+  }
+  
+  .project-card h3 {
+    font-size: 1.2em;
+    margin: 10px 0 15px 0;
+    color: #333;
+  }
+  
+  /* POPUP Styles */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+  }
+  
+  .modal-content {
+    background-color: #111; /* Dark black background */
+    color: #fff;            /* White text color */
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #444; /* Subtle dark border */
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .modal-content a {
+    color: #00bfff; /* Light blue color for GitHub link */
+    text-decoration: underline;
+  }
+  
+  .modal-content a:hover {
+    color: #1e90ff; /* Slightly lighter on hover */
+  }
+  
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: black;
+  }
+  
+  /* Responsive adjustment */
+  @media screen and (max-width: 1000px) {
+    .projects-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
