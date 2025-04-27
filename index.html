@@ -745,9 +745,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			  function openModal(id) {
 			    const modal = document.getElementById(id);
 			    modal.style.display = "block";
-			
-			    // Smooth scroll the page to center the opened modal
-			    modal.scrollIntoView({ behavior: "smooth", block: "center" });
+			    // No scrollIntoView anymore!
 			  }
 			
 			  function closeModal(id) {
@@ -755,6 +753,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			    modal.style.display = "none";
 			  }
 			</script>
+
 
 			<script>
 				const words = ["Data", "Patterns", "Insights", "Possibilities", "Stories", "Futures"];
