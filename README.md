@@ -2,7 +2,7 @@
 
 As a Data Scientist who finds joy in finding patterns in everything from F1 lap times to stock market trends to everything in this world, this portfolio showcases my journey in turning data into decisions.
  
-**Check out my portfolio**
+**Check out my portfolio**: [vedsirimalla.github.io](https://vedsirimalla.github.io/)
 
 ---
 
