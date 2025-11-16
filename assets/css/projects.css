@@ -31,9 +31,11 @@
     color: #333;
   }
   
-  /* POPUP Styles */
+  /* POPUP Styles*/
+/*
   .modal {
     display: none; /* Hidden by default */
+/*
     position: fixed;
     z-index: 1000;
     padding-top: 100px;
@@ -47,15 +49,46 @@
 
   .modal-content {
     background-color: #111; /* Dark black background */
+/*
     color: #fff;            /* White text color */
+/*
     margin: auto;
     padding: 30px;
     border: 1px solid #444; /* Subtle dark border */
+/*
     width: 80%;
     max-width: 500px;
     border-radius: 10px;
     text-align: center;
-  }
+  } 
+*/
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+  /* Remove padding-top */
+}
+
+.modal-content {
+  background-color: #111;
+  color: #fff;
+  margin: 30px auto 0 auto;   /* 30px from the very top */
+  padding: 30px;
+  border: 1px solid #444;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  top: 0;   /* Explicit for clarity, overrides vertical centering */
+}
   
   .modal-content a {
     color: #00bfff; /* Light blue color for GitHub link */
@@ -92,3 +125,4 @@
     }
   }
   
+
